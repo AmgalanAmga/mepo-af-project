@@ -10,6 +10,7 @@ import ContactInformation from "./Build/Contact/ContactInformation";
 
 // import context
 import { usePaymentContext } from "./context/paymentContext";
+import { useEffect } from "react";
 
 export const Payment = () => {
   const datas = new Array(2).fill(1);
@@ -18,6 +19,12 @@ export const Payment = () => {
   const switchBtn = () => {
     setSwitchSections(true);
   };
+
+  window.addEventListener("resize", (event) => {
+    if (event.currentTarget.innerWidth <= 900) setSwitchSections(false);
+  });
+
+  useEffect(() => {}, []);
   return (
     <motion.div
       className={css.bagSection}

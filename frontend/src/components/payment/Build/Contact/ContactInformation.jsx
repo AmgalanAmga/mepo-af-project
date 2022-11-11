@@ -12,10 +12,10 @@ import { usePaymentContext } from "../../context/paymentContext";
 
 const ContactInformation = (props) => {
   const { switchSections } = props;
+  const [error, setError] = useState(false);
   const [pocket, setPocket] = useState(false);
   const [credit, setCredit] = useState(false);
   const [storePay, setStorePay] = useState(false);
-  const [error, setError] = useState(false);
 
   const { setOpenPocket } = usePaymentContext();
 

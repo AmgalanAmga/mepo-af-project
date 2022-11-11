@@ -1,4 +1,4 @@
-import { useContext, useState} from "react";
+import { useContext, useState } from "react";
 import { GlobalContext } from "../../context/GlobalContext";
 import classes from "../../assets/styles/header.module.scss";
 import { BiMenuAltRight } from "react-icons/bi";
@@ -21,7 +21,6 @@ export const MenuHorzintial = ({ headermenu, headermenu2 }) => {
       setMenu(false);
     }
   });
-  
 
   const menuToggleHandler = () => {
     setMenuOpen((p) => !p);
@@ -76,11 +75,11 @@ export const MenuHorzintial = ({ headermenu, headermenu2 }) => {
       <div
         style={{
           display: !menu ? "block" : "block",
-          transform: !menu? "translateY(-400px)" : "translateY(0px)" 
+          transform: !menu ? "translateY(-400px)" : "translateY(0px)",
         }}
         className={classes.header_box}
       >
-        <MenuVetical headervermenu={headermenu} headervermenu2={headermenu2}/>
+        <MenuVetical headervermenu={headermenu} headervermenu2={headermenu2} />
       </div>
     </>
   );
