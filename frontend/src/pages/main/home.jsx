@@ -27,26 +27,6 @@ export const Home = () => {
         <h1 className={classes.home_collections_text}>Our collections</h1>
         <section id="animation">
           <HomeScrollAnimation />
-          {/* <HomeAnimation /> */}
-          {/* <Controller>
-            <Scene
-              duration={1000}
-              pin={true}
-              indicators={true}
-              triggerHook="onLeave"
-              triggerElement="#animation"
-            >
-              {(progress) => {
-                <div
-                  style={{
-                    width: "100%",
-                    height: "100vh",
-                    backgroundColor: "black",
-                  }}
-                ></div>;
-              }}
-            </Scene>
-          </Controller> */}
         </section>
         <div
           style={{
