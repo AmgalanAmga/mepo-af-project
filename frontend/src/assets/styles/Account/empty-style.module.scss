@@ -2,7 +2,7 @@
 
 .empty_section {
     width: 100%;
-    padding: 80px 90px;
+    padding: 0px 90px;
     padding-top: 135px;
     transition: .2s ease all;
     @media (max-width: 900px) {
@@ -13,13 +13,11 @@
     }
 
     @include breakpoint(md) {
-        padding: $pageSmallPadding;
-        padding-bottom: 1rem;
+        padding: 0 50px;
       }
   
       @include breakpoint(sm) {
-        padding: $paddingPhonePadding;
-        padding-bottom: 1rem;
+        padding: 0 20px;
       }
 
     &__container {
