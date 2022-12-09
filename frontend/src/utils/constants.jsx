@@ -6,12 +6,9 @@ import men5 from "../assets/images/mepo-image-men4.jpg";
 import khangal from "../assets/images/khangal.png";
 import riaaan from "../assets/images/riaaan.png";
 import kris from "../assets/images/kris.png";
+import slide from "../assets/images/slide.jpg";
 
-export const homeImgArr = [
-  "https://res.cloudinary.com/mustnest/image/upload/v1669293202/Mepo_Af/x6shifpt9lmhfri3owm2.png",
-  "https://res.cloudinary.com/mustnest/image/upload/v1669292935/Mepo_Af/u9y4kdbejy4m1iww3wu2.png",
-  "https://res.cloudinary.com/mustnest/image/upload/v1669293662/Mepo_Af/fxtkizq87fbfuolujjhr.png",
-];
+export const homeImgArr = [slide, men1, men5];
 export const langTextLeft = {
   en: [
     { name: "all", path: "/all" },

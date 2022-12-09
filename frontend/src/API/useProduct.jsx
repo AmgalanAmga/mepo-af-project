@@ -14,9 +14,9 @@ export const useProduct = () => {
   const allProducts = async () => {
     try {
       setLoading(true);
-      const res = await getAPI("/product");
-      setAllProducts(res.data);
-      setLoading(false);
+      // const res = await getAPI("/product");
+      // setAllProducts(res.data);
+      // setLoading(false);
     } catch (error) {
       return setServerMsg(error?.response.data.msg);
     }

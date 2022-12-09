@@ -123,6 +123,7 @@
     @include breakpoint(sm) {
       font-size: 48px;
       margin-top: 95px;
+      padding-bottom: 0;
     }
   }
   &_scroll_animation {
@@ -331,6 +332,11 @@
           padding-left: 60px;
           font-size: 68px;
           font-weight: 100;
+          // ______responsive______
+          @include breakpoint(sm) {
+            font-size: 36px;
+            padding-left: 20px;
+          }
         }
         button {
           color: #fff;
@@ -343,6 +349,11 @@
             margin-left: 1%;
             width: 46px;
             height: 46px;
+          }
+          // ______responsive______
+          @include breakpoint(sm) {
+            font-size: 20px;
+            padding: 10px 20px 40px;
           }
         }
       }
