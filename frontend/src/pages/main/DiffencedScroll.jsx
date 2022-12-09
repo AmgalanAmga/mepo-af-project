@@ -24,7 +24,7 @@ export const DiffencedScroll = ({ resize }) => {
                   ))} */}
                 <Tween
                   from={{
-                    y: resize < 680 ? "0" : "150vh",
+                    y: resize < 680 ? "0" : "70vh",
                   }}
                   to={{
                     y: resize < 680 ? "0" : "-50vh",
